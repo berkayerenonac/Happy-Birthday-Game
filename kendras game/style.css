@@ -1,0 +1,95 @@
+body {
+    background-color: #282c34; /* Mühendis temasına uygun koyu renk */
+    color: #FFFFFF;
+    font-family: 'Source Code Pro', monospace; /* Kodcu yazı tipi */
+    text-align: center;
+    overflow: hidden; /* Ekran kaymasın */
+}
+
+#game-container {
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive; /* Eğlenceli başlık fontu */
+    font-size: 3em;
+    color: #FF69B4; /* Pembe */
+    text-shadow: 2px 2px #000;
+}
+
+p {
+    font-size: 1.2em;
+    color: #98C379; /* Yeşil kod rengi */
+}
+
+#gameCanvas {
+    background-color: #21252b; /* Daha da koyu oyun alanı */
+    border: 3px solid #61AFEF; /* Mavi kod rengi */
+    border-radius: 10px;
+}
+
+/* Yükleme çubuğu stilleri */
+#progress-bar-container {
+    width: 800px;
+    height: 30px;
+    background-color: #1a1c22;
+    border: 2px solid #61AFEF;
+    border-radius: 5px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%; /* JavaScript ile bu genişliği artıracağız */
+    height: 100%;
+    background-color: #98C379; /* Yeşil başarı rengi */
+    transition: width 0.3s ease; /* Yumuşak geçiş */
+}
+
+#progress-text {
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+/* Final Hediye Ekranı Stili */
+#final-gift-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40, 44, 52, 0.95); /* Yarı şeffaf koyu arkaplan */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s; /* Yumuşak giriş animasyonu */
+}
+
+.ascii-art {
+    font-family: monospace;
+    font-size: 1.2em; /* Kalbin büyüklüğü */
+    color: #E06C75; /* Kırmızı/Pembe kalp */
+    line-height: 1; /* Satır aralığını daralt */
+}
+
+#final-gift-screen h1 {
+    color: #98C379; /* Yeşil Başarı Rengi */
+    font-size: 4em;
+}
+#final-gift-screen h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: #61AFEF; /* Mavi */
+    font-size: 2em;
+}
+#final-gift-screen p {
+    font-family: 'Pacifico', cursive;
+    color: #FF69B4;
+    font-size: 3em;
+}
+
+/* Animasyon */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

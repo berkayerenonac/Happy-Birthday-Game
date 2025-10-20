@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <title>Compiling Your Gift...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>Happy Birthday, Kendra Shea!</h1>
+        <p>Help me compile your gift! Catch the good code, avoid the bugs!</p>
+        
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">Compiling... 0%</p>
+        
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+    </div>
+
+    <div id="final-gift-screen" style="display: none;">
+        <h1>Gift Compiled Successfully!</h1>
+        
+        <pre class="ascii-art">
+   *** ***
+ ******* *******
+*****************
+ ***************
+  *************
+   ***********
+    *********
+     *******
+      *****
+       ***
+        *
+        </pre>
+        
+        <h2>This gift was compiled with love by [BERKAY EREN]</h2>
+        <p>Happy Birthday, Kendra!</p>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
